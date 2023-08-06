@@ -9,7 +9,8 @@ function App() {
   return (
     <>
       <Container>
-        <h1 className='my-5 text-center'>Portal de Noticias</h1>
+        <h1 className='my-5 text-center'>NOTICIAS</h1>
+       
         <Formulario />
         <ListaNoticias noticias={[]} />
       </Container>

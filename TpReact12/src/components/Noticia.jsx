@@ -22,7 +22,7 @@ const Noticia = ({ noticia }) => {
           </Card.Text>
         </Card.Body>
         <Card.Footer className="text-center">
-          <Button variant="primary">
+          <Button variant="warning">
             <a
               href={noticia.link}
               target="_blank"

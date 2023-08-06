@@ -8,7 +8,7 @@ const Formulario = () => {
   const [noticias, setNoticias] = useState([]);
   const [mostrarNoticias, setMostrarNoticias] = useState(false);
 
-  // Lista de categorías disponibles
+  
   const categorias = [
     { value: "business", label: "Negocios" },
     { value: "entertainment", label: "Entretenimiento" },
@@ -19,7 +19,7 @@ const Formulario = () => {
     { value: "technology", label: "Tecnología" },
   ];
 
-  // Lista de países disponibles
+  
   const paises = [
     { value: "de", label: "Alemania" },
     { value: "ar", label: "Argentina" },
@@ -33,7 +33,7 @@ const Formulario = () => {
 
   const consultarAPI = async () => {
     try {
-      const url = `https://newsdata.io/api/1/news?apikey=pub_24226bea9b87e0d87603664a9762b89a71aa4&category=${categoria}&country=${pais}`;
+      const url = `https://newsdata.io/api/1/news?apikey=pub_27255eeb9aed0b36610336db322bf162164af&category=${categoria}&country=${pais}`;
       const respuesta = await fetch(url);
       const dato = await respuesta.json();
       setNoticias(dato);
@@ -72,7 +72,7 @@ const Formulario = () => {
               ))}
             </Form.Select>
             <Container className="my-3 text-center">
-              <Button variant="success" type="submit">
+              <Button variant="outline-warning" type="submit">
                 Buscar
               </Button>
             </Container>
